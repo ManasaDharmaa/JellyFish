@@ -1,5 +1,6 @@
 package com.xworkz.puma.runner;
 
+import com.xworkz.puma.boot.Puma;
 import com.xworkz.puma.boot.Cloths;
 
 public class PumaRunner {
@@ -10,6 +11,11 @@ public class PumaRunner {
 		
 		cloths.casting();
 		cloths.shows();
+		
+		Puma Puma = new Puma();
+
+		Cloths cloth = (Cloths) Puma;
+		
 		
 	}
 
