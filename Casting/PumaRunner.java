@@ -12,9 +12,9 @@ public class PumaRunner {
 		cloths.casting();
 		cloths.shows();
 		
-		Puma Puma = new Puma();
+		Puma puma = new Cloths();
 
-		Cloths cloth = (Cloths) Puma;
+		Cloths cloth = (Cloths) puma;
 		
 		
 	}
