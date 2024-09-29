@@ -1,9 +1,10 @@
+Scanner sc = new Scanner(System.in);
 class OddEven{
 	
 	
 	public static void main(String [] args){
-		
-		int num = 6;
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
 		
 		if(num % 2 == 0){
 			System.out.println("Even");
