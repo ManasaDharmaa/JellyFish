@@ -68,11 +68,11 @@ String brand;
 	
 	String hyundaiOfOwner;
 	
-	float vivoTVPrice;
+	float lgTVPrice;
 	
-	long vivofirtsNumber;
+	long lgfirtsNumber;
 	
-	
+	String lgFounder;
 	
 	
 	public TV(String brand, int price, float version, char series, long costomerCare, String nameOfTheFounder,
@@ -82,7 +82,7 @@ String brand;
 			float latestTVVersion, char latestTVSeries, long latestTVCostomerCare, String latestTVNameOfTheFounder,
 			String latestTVCompany, int latestTVCompanyCode, float samsungTVPrice, long samsungfirtsNumber,
 			String samsungOfOwner, float hyundaiTVPrice, long hyundaiFirtsNumber, String hyundaiOfOwner,
-			float vivoTVPrice, long vivofirtsNumber) {
+			float lgTVPrice, long lgfirtsNumber, String lgFounder) {
 		super();
 		this.brand = brand;
 		this.price = price;
@@ -117,8 +117,9 @@ String brand;
 		this.hyundaiTVPrice = hyundaiTVPrice;
 		this.hyundaiFirtsNumber = hyundaiFirtsNumber;
 		this.hyundaiOfOwner = hyundaiOfOwner;
-		this.vivoTVPrice = vivoTVPrice;
-		this.vivofirtsNumber = vivofirtsNumber;
+		this.lgTVPrice = lgTVPrice;
+		this.lgfirtsNumber = lgfirtsNumber;
+		this.lgFounder = lgFounder;
 	}
 
 	public String toString() {
@@ -137,7 +138,7 @@ String brand;
 				+ samsungTVPrice + " samsungfirtsNumber "+ samsungfirtsNumber + 
 				" samsungOfOwner "+ samsungOfOwner +  " hyundaiTVPrice " + hyundaiTVPrice + 
 				" hyundaiFirtsNumber "+ hyundaiFirtsNumber + " hyundaiOfOwner " + hyundaiOfOwner + 
-				" vivoTVPrice "+ vivoTVPrice + " vivofirtsNumber " + vivofirtsNumber + "}"  ;
+				" lgTVPrice "+ lgTVPrice + " lgfirtsNumber " + lgfirtsNumber +"LG Founder" + lgFounder + "}"  ;
 	}
 	
 	public int hashCode() {
@@ -213,9 +214,11 @@ String brand;
 		
 		result = prime + result * hyundaiOfOwner.hashCode();
 		
-		result = prime + result * (int)vivoTVPrice;
+		result = prime + result * (int)lgTVPrice;
 		
-		result = prime + result * (int)vivofirtsNumber;
+		result = prime + result * (int)lgfirtsNumber;
+		
+		result = prime + result * lgFounder.hashCode();
 		
 		return result;
 	}

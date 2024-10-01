@@ -72,6 +72,8 @@ public class Mobile {
 	
 	long vivofirtsNumber;
 	
+	String vivoFounder;
+	
 	
 	public Mobile(String brand, int price, float version, char series, long costomerCare, String nameOfTheFounder,
 			String firstMobileCompany, int companyCode, float firstPhonePrice, long firtsNumber, String nameOfOwner,
@@ -81,7 +83,7 @@ public class Mobile {
 			long latestPhoneCostomerCare, String latestPhoneNameOfTheFounder, String latestPhoneCompany,
 			int latestPhoneCompanyCode, float samsungPhonePrice, long samsungfirtsNumber, String samsungOfOwner,
 			float oppoPhonePrice, long oppofirtsNumber, String oppoOfOwner, float vivoPhonePrice,
-			long vivofirtsNumber) {
+			long vivofirtsNumber, String vivoFounder) {
 		super();
 		this.brand = brand;
 		this.price = price;
@@ -118,6 +120,7 @@ public class Mobile {
 		this.oppoOfOwner = oppoOfOwner;
 		this.vivoPhonePrice = vivoPhonePrice;
 		this.vivofirtsNumber = vivofirtsNumber;
+		this.vivoFounder = vivoFounder;
 	}
 	
 	public String toString() {
@@ -136,7 +139,7 @@ public class Mobile {
 				+ samsungPhonePrice + " samsungfirtsNumber "+ samsungfirtsNumber + 
 				" samsungOfOwner "+ samsungOfOwner +  " oppoPhonePrice " + oppoPhonePrice + 
 				" oppofirtsNumber "+ oppofirtsNumber + " oppoOfOwner " + oppoOfOwner + 
-				" vivoPhonePrice "+ vivoPhonePrice + " vivofirtsNumber " + vivofirtsNumber + "}"  ;
+				" vivoPhonePrice "+ vivoPhonePrice + " vivofirtsNumber " + vivofirtsNumber + "vivo Founder"+ vivoFounder +" }"  ;
 	}
 	
 	public int hashCode() {
@@ -216,6 +219,7 @@ public class Mobile {
 		
 		result = prime + result * (int)vivofirtsNumber;
 		
+		result = prime + result * vivoFounder.hashCode();		
 		return result;
 	}
 

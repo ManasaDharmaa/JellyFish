@@ -14,7 +14,7 @@ public class MobileRunner {
 				5647653267l, "Sundar pichai","pixel",
 				657, 134000.0f, 9087564323l, "lee kun hee",
 				546700.0f, 9087654321l, "bbk electronics", 78650.0f,
-				90876554434l);
+				90876554434l, "Shen wei");
 		
                 System.out.println(mobile.toString());
                 System.out.println(mobile.hashCode());

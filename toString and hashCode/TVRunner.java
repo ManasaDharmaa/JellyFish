@@ -14,7 +14,7 @@ public static void main(String[] args) {
 				7899.0f, 'M', 8907654534l, "Sivakumaran",
 				"Sony", 345, 8799.0f, 8907654534l,
 				"J.L. Baird", 78899.0f, 8907654534l,"Chung ju yung",
-				5999.0f, 8907654534l);
+				5999.0f, 8907654534l, "koo in hwoi");
 		
                 System.out.println(tv.toString());
                 System.out.println(tv.hashCode());
