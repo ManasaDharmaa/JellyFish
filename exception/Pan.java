@@ -7,7 +7,7 @@ public class Pan {
 	public int age;
 	public String password;
 	public String name;
-	public int phoneNum;
+	public long phoneNum;
 	public String email;
 
 	public void panAge(int age) {
@@ -38,8 +38,9 @@ public class Pan {
 		}
 	}
 
-	public void panPhoneNum(int phoneNum) {
-		if (phoneNum > 10) {
+	public void panPhoneNum(long phoneNum) {
+		if ((phoneNum > 999999999l && phoneNum < 10000000000l) && 
+			    (String.valueOf(phoneNum).startsWith("9"))){
 			System.out.println("your number is valid");
 
 		} else {

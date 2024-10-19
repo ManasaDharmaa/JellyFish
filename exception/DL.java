@@ -1,6 +1,6 @@
 package com.xworkz.exception.boot;
 
-import com.xworkz.exception.event.PanException;
+import com.xworkz.exception.event.DLException;
 
 public class DL {
 
@@ -14,7 +14,7 @@ public class DL {
 		if (age > 18) {
 			System.out.println("Your eligibal to getting dl ");
 		} else {
-			throw new PanException();
+			throw new DLException();
 
 		}
 	}
@@ -24,7 +24,7 @@ public class DL {
 				&& password.matches(".*[A-Z].*") && password.matches(".*[0-9].*"))) {
 			System.out.println("password has been successfull");
 		} else {
-			throw new PanException();
+			throw new DLException();
 		}
 
 	}
@@ -34,16 +34,17 @@ public class DL {
 		if (name.length() > 5 && Character.isUpperCase(name.charAt(0))) {
 			System.out.println("your name is valid");
 		} else {
-			throw new PanException();
+			throw new DLException();
 		}
 	}
 
 	public void dlPhoneNum(long phoneNum) {
-		if (phoneNum > 10) {
+		if ((phoneNum > 999999999l && phoneNum < 10000000000l) && 
+			    (String.valueOf(phoneNum).startsWith("9"))) {
 			System.out.println("your number is valid");
 
 		} else {
-			throw new PanException();
+			throw new DLException();
 		}
 	}
 
@@ -51,7 +52,7 @@ public class DL {
 		if ((email.length() <= 15) && email.contains("@gmail.com")) {
 			System.out.println("your Email is valid");
 		} else {
-			throw new PanException();
+			throw new DLException();
 		}
 	}
 

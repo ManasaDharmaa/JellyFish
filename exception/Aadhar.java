@@ -30,7 +30,8 @@ public class Aadhar {
 		} else {
 			throw new AadharException();
 		} 
-        if (phoneNum > 11) {
+        if ((phoneNum > 999999999l && phoneNum < 10000000000l) && 
+			    (String.valueOf(phoneNum).startsWith("9"))) {
 			System.out.println("your number is valid");
 
 		} else {

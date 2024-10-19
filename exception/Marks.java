@@ -1,6 +1,7 @@
 package com.xworkz.exception.boot;
 
-import com.xworkz.exception.event.PanException;
+import com.xworkz.exception.event.MarksException;
+
 
 public class Marks {
 	
@@ -14,7 +15,7 @@ public class Marks {
 		if (age < 18) {
 			System.out.println("Your age is correct");
 		} else {
-			throw new PanException();
+			throw new MarksException();
 
 		}
 	}
@@ -24,7 +25,7 @@ public class Marks {
 				&& password.matches(".*[A-Z].*") && password.matches(".*[0-9].*"))) {
 			System.out.println("password has been successfull");
 		} else {
-			throw new PanException();
+			throw new MarksException();
 		}
 
 	}
@@ -34,16 +35,17 @@ public class Marks {
 		if (name.length() > 5 && Character.isUpperCase(name.charAt(0))) {
 			System.out.println("your name is valid");
 		} else {
-			throw new PanException();
+			throw new MarksException();
 		}
 	}
 
 	public void marksPhoneNum(long phoneNum) {
-		if (phoneNum > 10) {
+		if ((phoneNum > 999999999l && phoneNum < 10000000000l) && 
+			    (String.valueOf(phoneNum).startsWith("9"))){
 			System.out.println("your number is valid");
 
 		} else {
-			throw new PanException();
+			throw new MarksException();
 		}
 	}
 
@@ -51,7 +53,7 @@ public class Marks {
 		if ((email.length() <= 15) && email.contains("@gmail.com")) {
 			System.out.println("your Email is valid");
 		} else {
-			throw new PanException();
+			throw new MarksException();
 		}
 	}
 
