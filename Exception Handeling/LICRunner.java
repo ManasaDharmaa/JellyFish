@@ -8,5 +8,4 @@ public class LICRunner {
 		LIC lic = new LIC(22, "Naaab@31", "Iaasd", 9987543218l, "Kayea@gmail.com", true);
 	}
 
-
 }
