@@ -7,7 +7,7 @@ public class MarksRunner {
 		
 		
 			
-			Marks marks = new Marks(72, "Moni21#", "Monish", 9098754321l, "monu@gmail.com");
+			Marks marks = new Marks(72, "moni21#", "Monish", 9098754321l, "monu@gmail.com");
 		
 	}
 

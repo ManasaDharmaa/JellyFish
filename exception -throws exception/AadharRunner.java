@@ -6,7 +6,8 @@ public class AadharRunner {
 	
 	public static void main(String[] args) throws Exception{
 		
-		Aadhar aadhar = new Aadhar(22, "Naya21#", "Nayana shree", 9098754321l, "naya@gmail.com");
+		Aadhar aadhar = new Aadhar();
+		aadhar.Aadhar(22, "Naaab@31", "Iaasd", 9987543218l, "Kayea@gmail.com", true);
 	}
 
 }
