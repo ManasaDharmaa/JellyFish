@@ -7,7 +7,7 @@ class Bakery{
 		double eggRoll = 30.0d;
 		double chocolateBun = 20.0d;
 		double redVelvet = 80.0d;
-		double puff = 15.0d;
+		double puff = 25.0d;
 		
 		
 		double [] items = {plainCake, eggRoll, chocolateBun, redVelvet, puff};
